@@ -15,6 +15,6 @@ function loginFunction() {
 	else
 
 		console.log(username);
-	console.log(password);
+		console.log(password);
 
 }
