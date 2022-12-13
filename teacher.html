@@ -4,12 +4,92 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Teacher</title>
+	<title>NPSS Announcements</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<!-- Page Header -->
+	<div class="header">
+		<img class="headerImage" src="images/image1.png">
+ 	 <h1 class="headerH1">Announcement Creator</h1>		
+	</div>
+	
 </head>
 
-<body>
+<body class="margin">
+	
+	<div class=optionsLeft>
+	<!-- Grades Checkboxes -->
+	<div class="grades">	
+		<h1 class="teacherH1">Grades</h1>
+		
+		<label class="box">Grade 9
+  		<input type="checkbox" id="grade9">
+  		<span class="checkmark"></span>
+		</label>
+		<label class="box">Grade 10
+  		<input type="checkbox" id="grade10">
+  		<span class="checkmark"></span>
+		</label>
+		<label class="box">Grade 11
+  		<input type="checkbox" id="grade11">
+ 		 <span class="checkmark"></span>
+		</label>
+		<label class="box">Grade 12
+ 		 <input type="checkbox" id="grade12">
+		  <span class="checkmark"></span>
+		</label>
+	</div>
+	
+	<!-- Gender Checkboxes -->
+	<div class="gender">	
+		<h1 class="teacherH1">Gender</h1>
+		
+		<label class="box">Female
+  		<input type="checkbox" id="genderFemale">
+  		<span class="checkmark"></span>
+		</label>
+		<label class="box">Male
+  		<input type="checkbox"id="genderMale">
+  		<span class="checkmark"></span>
+		</label>
+		<label class="box">Other
+  		<input type="checkbox" id="genderOther">
+ 		 <span class="checkmark"></span>
+		</label>
+	</div>
+	
+	<!-- Clubs Selection Dropdown -->
+	<div class="clubs">
+		<h1 class="teacherH1">Club</h1>
+		
+		<select class= "dropdown" id="club">
+			<option value="">Select Club</option>
+			<option value="" disabled>-----------</option>
+			<option value="hackclub">Hackclub</option>
+			<option value="deca">DECA</option>
+			<option value="film">Film Club</option>
+			<option value="robotics">Robotics Club</option>
+		</select>
+	</div>
 
+	<!-- Post Button -->
+	<div class= "post">	
+		<button type="submit" class="postButton">Post</button>
+	</div>
+		
+	</div>
+
+	<!-- Anouncement Details Textbox -->
+  <div class="detail">
+   <div class="field">
+      <input type="text" class="title" name="announcement" placeholder="Announcement Title...">
+    </div>
+    <div class="field">
+      <textarea class="announcementContent" name="content" id="content" placeholder="Type the anouncement content here..."></textarea>
+    </div>
+
+   </div>
+	
 </body>
 
 <!-- CSS Testing
@@ -21,6 +101,6 @@
 	<button>Button</button>
 </body>
 -->
-	
-<script src="script.js"></script>
+
+<script src="scripts/teacher.js"></script>
 </html>
